@@ -1,5 +1,8 @@
 {
-.appVersion = "1290";
+.appVersion = "1330";
+DisplayStrings = (
+A
+);
 classes = (
 {
 automatic = 1;
@@ -1072,7 +1075,7 @@ Tag = wght;
 },
 {
 name = "Variable Font File Name";
-value = "Sansita Swashed";
+value = "SansitaSwashed[wght]";
 },
 {
 name = "Variable Font Family Name";
@@ -1083,7 +1086,7 @@ name = "Variable Font Origin";
 value = "1252CFB8-7EB2-4C2F-9C11-14383990C0AA";
 }
 );
-date = "2020-02-08 17:08:51 +0000";
+date = "2020-05-20 19:22:50 +0000";
 designer = "Pablo Cosgaya";
 designerURL = "www.omnibus-type.com";
 disablesNiceNames = 1;
@@ -2427,6 +2430,15 @@ value = 45;
 {
 name = underlinePosition;
 value = -190;
+},
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 300;
+}
+);
 }
 );
 descender = -180;
@@ -2505,6 +2517,15 @@ value = 93;
 {
 name = underlinePosition;
 value = -190;
+},
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 900;
+}
+);
 }
 );
 descender = -180;
@@ -2863,7 +2884,7 @@ nodes = (
 "425 311 OFFCURVE",
 "460 399 OFFCURVE",
 "498 508 CURVE",
-"498 508 LINE",
+"499 508 LINE",
 "493 403 OFFCURVE",
 "492 321 OFFCURVE",
 "493 239 CURVE",
@@ -109151,6 +109172,8 @@ interpolationWeight = 300;
 instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 1;
 };
+isItalic = 1;
+linkStyle = Light;
 name = "Light Italic";
 weightClass = Light;
 },
@@ -109221,8 +109244,47 @@ instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 0.66667;
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.33333;
 };
+isItalic = 1;
+linkStyle = Medium;
 name = "Medium Italic";
 weightClass = Medium;
+},
+{
+customParameters = (
+{
+name = compatibleFullName;
+value = "Sansita Swashed SemiBoldBold Italic";
+},
+{
+name = postscriptFontName;
+value = "SansitaSwashed-SemiBoldItalic";
+},
+{
+name = postscriptFullName;
+value = "Sansita Swashed SemiBold Italic";
+},
+{
+name = preferredFamilyName;
+value = "Sansita Swashed";
+},
+{
+name = preferredSubfamilyName;
+value = "SemiBold Italic";
+},
+{
+name = weightClass;
+value = 600;
+}
+);
+interpolationWeight = 600;
+instanceInterpolations = {
+"1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 0.5;
+"E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.5;
+};
+isItalic = 1;
+linkStyle = SemiBold;
+name = SemiBold;
+weightClass = SemiBold;
 },
 {
 customParameters = (
@@ -109294,6 +109356,8 @@ instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 0.16667;
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.83333;
 };
+isItalic = 1;
+linkStyle = ExtraBold;
 name = "ExtraBold Italic";
 weightClass = ExtraBold;
 },
@@ -109328,6 +109392,8 @@ interpolationWeight = 900;
 instanceInterpolations = {
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 1;
 };
+isItalic = 1;
+linkStyle = Black;
 name = "Black Italic";
 weightClass = Black;
 }
@@ -113891,8 +113957,8 @@ manufacturer = "Omnibus-Type";
 manufacturerURL = "www.omnibus-type.com";
 unitsPerEm = 1000;
 userData = {
-LWPluginVersion = "1392";
+LWPluginVersion = "1429";
 };
 versionMajor = 1;
-versionMinor = 1;
+versionMinor = 2;
 }

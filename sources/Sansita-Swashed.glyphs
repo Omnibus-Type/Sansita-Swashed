@@ -1,8 +1,5 @@
 {
-.appVersion = "1330";
-DisplayStrings = (
-A
-);
+.appVersion = "1338";
 classes = (
 {
 automatic = 1;
@@ -2542,6 +2539,9 @@ showMeasurement = 1;
 iconName = Bold;
 id = "E87290C6-23CF-4B1A-9291-A4CEFD7391A8";
 italicAngle = 11;
+userData = {
+GSCornerRadius = 15;
+};
 weightValue = 900;
 widthValue = 5;
 xHeight = 510;
@@ -85059,7 +85059,7 @@ name = hyphen;
 }
 );
 layerId = "1252CFB8-7EB2-4C2F-9C11-14383990C0AA";
-width = 600;
+width = 375;
 },
 {
 components = (
@@ -85069,7 +85069,7 @@ name = hyphen;
 }
 );
 layerId = "E87290C6-23CF-4B1A-9291-A4CEFD7391A8";
-width = 600;
+width = 365;
 }
 );
 leftKerningGroup = emdash;
@@ -92261,35 +92261,6 @@ paths = (
 {
 closed = 1;
 nodes = (
-"431 100 OFFCURVE",
-"465 121 OFFCURVE",
-"465 151 CURVE SMOOTH",
-"465 163 OFFCURVE",
-"461 175 OFFCURVE",
-"452 188 CURVE",
-"439 176 OFFCURVE",
-"414 168 OFFCURVE",
-"390 168 CURVE SMOOTH",
-"344 168 OFFCURVE",
-"221 204 OFFCURVE",
-"161 204 CURVE SMOOTH",
-"111 204 OFFCURVE",
-"78 183 OFFCURVE",
-"78 152 CURVE SMOOTH",
-"78 140 OFFCURVE",
-"83 128 OFFCURVE",
-"91 116 CURVE",
-"104 128 OFFCURVE",
-"129 136 OFFCURVE",
-"153 136 CURVE SMOOTH",
-"199 136 OFFCURVE",
-"322 100 OFFCURVE",
-"382 100 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
 "433 267 OFFCURVE",
 "465 287 OFFCURVE",
 "465 318 CURVE SMOOTH",
@@ -92314,6 +92285,35 @@ nodes = (
 "199 303 OFFCURVE",
 "322 267 OFFCURVE",
 "382 267 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"431 100 OFFCURVE",
+"465 121 OFFCURVE",
+"465 151 CURVE SMOOTH",
+"465 163 OFFCURVE",
+"461 175 OFFCURVE",
+"452 188 CURVE",
+"439 176 OFFCURVE",
+"414 168 OFFCURVE",
+"390 168 CURVE SMOOTH",
+"344 168 OFFCURVE",
+"221 204 OFFCURVE",
+"161 204 CURVE SMOOTH",
+"111 204 OFFCURVE",
+"78 183 OFFCURVE",
+"78 152 CURVE SMOOTH",
+"78 140 OFFCURVE",
+"83 128 OFFCURVE",
+"91 116 CURVE",
+"104 128 OFFCURVE",
+"129 136 OFFCURVE",
+"153 136 CURVE SMOOTH",
+"199 136 OFFCURVE",
+"322 100 OFFCURVE",
+"382 100 CURVE SMOOTH"
 );
 }
 );
@@ -93017,14 +93017,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"464 448 LINE",
-"574 543 LINE",
-"468 593 LINE",
-"369 476 LINE",
-"317 423 LINE",
-"134 238 LINE",
-"47 162 LINE",
-"114 94 LINE"
+"221 210 LINE",
+"467 448 LINE",
+"539 517 LINE",
+"477 578 LINE",
+"379 469 LINE",
+"170 267 LINE",
+"53 161 LINE",
+"110 99 LINE"
 );
 },
 {
@@ -109253,7 +109253,7 @@ weightClass = Medium;
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed SemiBoldBold Italic";
+value = "Sansita Swashed SemiBold Italic";
 },
 {
 name = postscriptFontName;

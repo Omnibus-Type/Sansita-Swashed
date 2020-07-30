@@ -12,3 +12,4 @@
 Pablo Cosgaya <omnibus.type@gmail.com>
 Aldo De Losa <omnibus.type@gmail.com>
 Yorlmar Campos <omnibus.type@gmail.com>
+Yanone <post@yanone.de>

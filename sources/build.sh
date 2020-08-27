@@ -1,52 +1,106 @@
 #!/bin/sh
+
+#===========================================================================
+#Update this variable ==========================================================
+
+thisFont="SansitaSwashed"
+axis="wght"
+
+#===========================================================================
+#Generating fonts ==========================================================
+
 set -e
 
+echo ".
+GENERATING VARIABLE
+."
+mkdir -p ../fonts/vf
+fontmake -g $thisFont.glyphs -o variable --output-path ../fonts/vf/$thisFont[$axis].ttf
 
+echo ".
+GENERATING STATIC TTF
+."
+mkdir -p ../fonts/ttf
+fontmake -g $thisFont.glyphs -i -o ttf --output-dir ../fonts/ttf/
 
-echo "Generating Static fonts"
-mkdir -p ../fonts/ttf/
-rm -rf ../fonts/ttf/*.ttf
-fontmake -g Sansita-Swashed.glyphs -i -o ttf --output-dir ../fonts/ttf/
+echo ".
+GENERATING STATIC OTF
+."
+mkdir -p ../fonts/otf
+fontmake -g $thisFont.glyphs -i -o otf --output-dir ../fonts/otf/
 
-echo "Post processing"
-ttfs=$(ls ../fonts/ttf/*.ttf)
-for ttf in $ttfs
-do
-	gftools fix-dsig -f $ttf;
-	ttfautohint $ttf $ttf.fix;
-	mv $ttf.fix $ttf;
-	gftools fix-hinting $ttf
-	mv $ttf.fix $ttf;
-done
+#============================================================================
+#Post-processing fonts ======================================================
 
-
-
-echo "Generating VFs"
-mkdir -p ../fonts/vf/
-rm -rf ../fonts/vf/*.ttf
-fontmake -g Sansita-Swashed.glyphs -o variable --output-path ../fonts/vf/SansitaSwashed-Italic\[wght\].ttf
-
-echo "Post processing"
+echo ".
+POST-PROCESSING VF
+."
 vfs=$(ls ../fonts/vf/*.ttf)
 for vf in $vfs
 do
-	gftools fix-dsig -f $vf;
-	gftools fix-unwanted-tables $vf
+	gftools fix-dsig --autofix $vf
 	gftools fix-nonhinting $vf $vf.fix
-	mv $vf.fix $vf;
+	mv $vf.fix $vf
+	gftools fix-unwanted-tables --tables MVAR $vf
 done
+rm ../fonts/vf/*gasp*
 
-gftools fix-vf-meta $vfs;
+gftools fix-vf-meta ../fonts/vf/$thisFont[$axis].ttf
 for vf in $vfs
 do
-	mv "$vf.fix" $vf;
+	mv $vf.fix $vf
 done
 
-rm ../fonts/vf/*backup*.ttf
 
+echo ".
+POST-PROCESSING TTF
+."
+ttfs=$(ls ../fonts/ttf/*.ttf)
+echo $ttfs
+for ttf in $ttfs
+do
+	gftools fix-dsig --autofix $ttf
+	ttfautohint $ttf $ttf.fix
+	[ -f $ttf.fix ] && mv $ttf.fix $ttf
+	gftools fix-hinting $ttf
+	[ -f $ttf.fix ] && mv $ttf.fix $ttf
+done
 
+echo ".
+POST-PROCESSING OTF
+."
+otfs=$(ls ../fonts/otf/*.otf)
+for otf in $otfs
+do
+	gftools fix-dsig --autofix $otf
+	gftools fix-weightclass $otf
+	[ -f $otf.fix ] && mv $otf.fix $otf
+done
 
-echo "QAing"
-gftools qa -f ../fonts/vf/*.ttf -fb ../fonts/vf/*.ttf -o ../qa --fontbakery --diffenator --diffbrowsers
+#============================================================================
+#Build woff and woff2 fonts =================================================
+#requires https://github.com/bramstein/homebrew-webfonttools
+
+echo ".
+BUILD WEBFONTS
+."
+mkdir -p ../fonts/webfonts
+
+ttfs=$(ls ../fonts/ttf/*.ttf)
+for ttf in $ttfs
+do
+  woff2_compress $ttf
+  sfnt2woff-zopfli $ttf
+done
+
+woffs=$(ls ../fonts/ttf/*.woff*)
+for woff in $woffs
+do
+	mv $woff ../fonts/webfonts/
+done
 
 rm -rf master_ufo/ instance_ufo/
+
+echo ".
+COMPLETE!
+."

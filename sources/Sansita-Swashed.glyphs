@@ -1,5 +1,5 @@
 {
-.appVersion = "1338";
+.appVersion = "1346";
 classes = (
 {
 automatic = 1;
@@ -1072,7 +1072,7 @@ Tag = wght;
 },
 {
 name = "Variable Font File Name";
-value = "SansitaSwashed-Italic[wght]";
+value = "SansitaSwashed[wght]";
 },
 {
 name = "Variable Font Family Name";
@@ -2386,7 +2386,6 @@ alignmentZones = (
 );
 ascender = 1020;
 capHeight = 660;
-custom = Italic;
 customParameters = (
 {
 name = typoAscender;
@@ -2451,7 +2450,6 @@ position = "{770, 844}";
 );
 id = "1252CFB8-7EB2-4C2F-9C11-14383990C0AA";
 italicAngle = 11;
-name = "Light Italic ";
 userData = {
 GSOffsetHorizontal = -2;
 GSOffsetKeepCompatible = 1;
@@ -2473,7 +2471,7 @@ alignmentZones = (
 );
 ascender = 1020;
 capHeight = 660;
-custom = "Black Italic";
+custom = Black;
 customParameters = (
 {
 name = typoAscender;
@@ -109145,15 +109143,15 @@ instances = (
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed Light Italic";
+value = "Sansita Swashed Light";
 },
 {
 name = postscriptFontName;
-value = "SansitaSwashed-LightItalic";
+value = "SansitaSwashed-Light";
 },
 {
 name = postscriptFullName;
-value = "Sansita Swashed Light Italic";
+value = "Sansita Swashed Light";
 },
 {
 name = preferredFamilyName;
@@ -109161,7 +109159,7 @@ value = "Sansita Swashed";
 },
 {
 name = preferredSubfamilyName;
-value = "Light Italic";
+value = Light;
 },
 {
 name = weightClass;
@@ -109172,24 +109170,22 @@ interpolationWeight = 300;
 instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 1;
 };
-isItalic = 1;
-linkStyle = Light;
-name = "Light Italic";
+name = Light;
 weightClass = Light;
 },
 {
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed Italic";
+value = "Sansita Swashed";
 },
 {
 name = postscriptFontName;
-value = "SansitaSwashed-Italic";
+value = SansitaSwashed;
 },
 {
 name = postscriptFullName;
-value = "Sansita Swashed Italic";
+value = "Sansita Swashed";
 },
 {
 name = preferredFamilyName;
@@ -109197,7 +109193,7 @@ value = "Sansita Swashed";
 },
 {
 name = preferredSubfamilyName;
-value = Italic;
+value = "";
 },
 {
 name = weightClass;
@@ -109209,22 +109205,21 @@ instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 0.83333;
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.16667;
 };
-isItalic = 1;
-name = Italic;
+name = Regular;
 },
 {
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed Medium Italic";
+value = "Sansita Swashed Medium";
 },
 {
 name = postscriptFontName;
-value = "SansitaSwashed-MediumItalic";
+value = "SansitaSwashed-Medium";
 },
 {
 name = postscriptFullName;
-value = "Sansita Swashed Medium Italic";
+value = "Sansita Swashed Medium";
 },
 {
 name = preferredFamilyName;
@@ -109232,7 +109227,7 @@ value = "Sansita Swashed";
 },
 {
 name = preferredSubfamilyName;
-value = "Medium Italic";
+value = Medium;
 },
 {
 name = weightClass;
@@ -109244,24 +109239,22 @@ instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 0.66667;
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.33333;
 };
-isItalic = 1;
-linkStyle = Medium;
-name = "Medium Italic";
+name = Medium;
 weightClass = Medium;
 },
 {
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed SemiBold Italic";
+value = "Sansita Swashed SemiBold";
 },
 {
 name = postscriptFontName;
-value = "SansitaSwashed-SemiBoldItalic";
+value = "SansitaSwashed-SemiBold";
 },
 {
 name = postscriptFullName;
-value = "Sansita Swashed SemiBold Italic";
+value = "Sansita Swashed SemiBold";
 },
 {
 name = preferredFamilyName;
@@ -109269,7 +109262,7 @@ value = "Sansita Swashed";
 },
 {
 name = preferredSubfamilyName;
-value = "SemiBold Italic";
+value = SemiBold;
 },
 {
 name = weightClass;
@@ -109281,24 +109274,22 @@ instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 0.5;
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.5;
 };
-isItalic = 1;
-linkStyle = SemiBold;
-name = "SemiBold Italic";
+name = SemiBold;
 weightClass = SemiBold;
 },
 {
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed Bold Italic";
+value = "Sansita Swashed Bold";
 },
 {
 name = postscriptFontName;
-value = "SansitaSwashed-BoldItalic";
+value = "SansitaSwashed-Bold";
 },
 {
 name = postscriptFullName;
-value = "Sansita Swashed Bold Italic";
+value = "Sansita Swashed Bold";
 },
 {
 name = preferredFamilyName;
@@ -109306,7 +109297,7 @@ value = "Sansita Swashed";
 },
 {
 name = preferredSubfamilyName;
-value = "Bold Italic";
+value = Bold;
 },
 {
 name = weightClass;
@@ -109319,23 +109310,22 @@ instanceInterpolations = {
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.66667;
 };
 isBold = 1;
-isItalic = 1;
-name = "Bold Italic";
+name = Bold;
 weightClass = Bold;
 },
 {
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed ExtraBold Italic";
+value = "Sansita Swashed ExtraBold";
 },
 {
 name = postscriptFontName;
-value = "SansitaSwashed-ExtraBoldItalic";
+value = "SansitaSwashed-ExtraBold";
 },
 {
 name = postscriptFullName;
-value = "Sansita Swashed ExtraBold Italic";
+value = "Sansita Swashed ExtraBold";
 },
 {
 name = preferredFamilyName;
@@ -109343,7 +109333,7 @@ value = "Sansita Swashed";
 },
 {
 name = preferredSubfamilyName;
-value = "ExtraBold Italic";
+value = ExtraBold;
 },
 {
 name = weightClass;
@@ -109356,24 +109346,22 @@ instanceInterpolations = {
 "1252CFB8-7EB2-4C2F-9C11-14383990C0AA" = 0.16667;
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 0.83333;
 };
-isItalic = 1;
-linkStyle = ExtraBold;
-name = "ExtraBold Italic";
+name = ExtraBold;
 weightClass = ExtraBold;
 },
 {
 customParameters = (
 {
 name = compatibleFullName;
-value = "Sansita Swashed Black Italic";
+value = "Sansita Swashed Black";
 },
 {
 name = postscriptFontName;
-value = "SansitaSwashed-BlackItalic";
+value = "SansitaSwashed-Black";
 },
 {
 name = postscriptFullName;
-value = "Sansita Swashed Black Italic";
+value = "Sansita Swashed Black";
 },
 {
 name = preferredFamilyName;
@@ -109381,7 +109369,7 @@ value = "Sansita Swashed";
 },
 {
 name = preferredSubfamilyName;
-value = "Black Italic";
+value = Black;
 },
 {
 name = weightClass;
@@ -109392,9 +109380,7 @@ interpolationWeight = 900;
 instanceInterpolations = {
 "E87290C6-23CF-4B1A-9291-A4CEFD7391A8" = 1;
 };
-isItalic = 1;
-linkStyle = Black;
-name = "Black Italic";
+name = Black;
 weightClass = Black;
 }
 );
